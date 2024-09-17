@@ -6,7 +6,7 @@ import { MdBookmarkAdded } from "react-icons/md";
 
 const TopRepos = () => {
   return (
-    <div className="mt-14 mx-4">
+    <div className="mt-14 mx-4 ">
       <div className="flex justify-between items-center">
         <h2 className="text-sm font-semibold">Top Repositories</h2>
         <button className="bg-[#238636] text-white px-2 py-1 rounded-md flex gap-2 items-center text-sm font-semibold">

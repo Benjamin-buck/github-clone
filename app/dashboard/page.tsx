@@ -9,10 +9,10 @@ const Dashboard = () => {
       <Navbar />
 
       <div className="flex flex-row max-md:flex-col">
-        <div className=" flex-1 h-[100vh] border-r border-gray-700">
+        <div className=" flex-1 h-[100vh] ">
           <TopRepos />
         </div>
-        <div className="w-[65%]  mt-6 pl-[100px] max-xl:px-5 max-md:w-[100%]">
+        <div className="w-[65%] border-l border-gray-700  pl-[100px] max-xl:px-5 max-md:w-[100%]">
           <MainContent />
         </div>
         <div className="flex-1 max-xl:hidden">

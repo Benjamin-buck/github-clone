@@ -13,7 +13,7 @@ interface Props {
 }
 
 const Repository = ({ repo, description, language, profileImage }: Props) => {
-  const [favorite, setFavorite] = useState(false);
+  const [favorite] = useState(false);
   return (
     <div className="border-b last:border-none border-gray-700 mt-5">
       <div className="mb-5 mx-4">
