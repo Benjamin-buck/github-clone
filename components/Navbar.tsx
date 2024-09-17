@@ -12,7 +12,7 @@ import { IoSearch } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <nav className="border-b border-gray-700 py-4">
+    <nav className="bg-black border-b border-gray-700 py-4">
       <div className="px-4 flex justify-between">
         <div className="flex items-center gap-3">
           <MdOutlineMenu className="text-[30px] border border-gray-700 rounded-md p-1" />
