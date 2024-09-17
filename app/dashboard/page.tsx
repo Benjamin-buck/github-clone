@@ -1,7 +1,7 @@
+import MainContent from "@/components/MainContent";
 import Navbar from "@/components/Navbar";
 import RightSidebar from "@/components/RightSidebar";
 import TopRepos from "@/components/TopRepos";
-import React from "react";
 
 const Dashboard = () => {
   return (
@@ -12,8 +12,8 @@ const Dashboard = () => {
         <div className=" flex-1 h-[100vh] border-r border-gray-700">
           <TopRepos />
         </div>
-        <div className="w-[50%] mt-6 ml-[100px]">
-          <h1 className="text-2xl font-semibold">Home</h1>
+        <div className="w-[65%]  mt-6 pl-[100px] max-xl:px-5 max-md:w-[100%]">
+          <MainContent />
         </div>
         <div className="flex-1 max-xl:hidden">
           <RightSidebar />
