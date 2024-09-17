@@ -28,7 +28,8 @@ This project is a clone of the GitHub interface, built using **Next.js** and **T
 
 ## Current Progress & Screenshots
 ### Github Dashboard
-![image](https://github.com/user-attachments/assets/aae265a9-f24a-4a48-adc0-92605d0db08a)
+![image](https://github.com/user-attachments/assets/a03a4c71-3fcf-4774-9265-119f2f6b40d4)
+
 
 
 ## Getting Started
