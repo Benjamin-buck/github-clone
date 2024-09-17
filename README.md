@@ -1,4 +1,4 @@
-# GitHub Interface Clone
+# GitHub Interface Clone - In Progress
 
 This project is a clone of the GitHub interface, built using **Next.js** and **Tailwind CSS** as part of a portfolio showcase. The goal of the project is to replicate GitHub's sleek design and responsiveness, while demonstrating modern frontend development practices.
 
@@ -25,6 +25,11 @@ This project is a clone of the GitHub interface, built using **Next.js** and **T
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development
 - **React Icons**: For adding GitHub-like icons throughout the UI
 - **Headless UI**: (Optional) For accessibility-friendly components
+
+## Current Progress & Screenshots
+### Github Dashboard
+![image](https://github.com/user-attachments/assets/aae265a9-f24a-4a48-adc0-92605d0db08a)
+
 
 ## Getting Started
 
