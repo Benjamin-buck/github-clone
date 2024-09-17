@@ -10,6 +10,7 @@ import { BsRecordCircle } from "react-icons/bs";
 import { FaCaretDown } from "react-icons/fa6";
 import { IoMdAdd, IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
+import { menuItems } from "@/constants/data";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -17,6 +18,7 @@ const Navbar = () => {
     <>
       {mobileNav && (
         <div className="z-50 bg-[#151b23] fixed top-0 -left-[0] w-[400px] border-r border-gray-700 rounded-lg h-full ">
+          {/* Logo Area */}
           <div className="flex items-center justify-between mx-4 mt-4">
             <FaGithub className="text-[35px]" />
             <div
@@ -25,6 +27,20 @@ const Navbar = () => {
             >
               <IoMdClose className="text-[15px]" />
             </div>
+          </div>
+
+          {/* Menu Items */}
+          <div className="mx-4 mt-5">
+            {menuItems.map((link) => (
+              <Link
+                href={link.href}
+                key={link.Label}
+                className="flex gap-2 items-center text-sm py-[6px] hover:bg-[#212830] rounded-md px-2"
+              >
+                <img src={link.icon} alt="icon" className="w-5" />
+                {link.Label}
+              </Link>
+            ))}
           </div>
         </div>
       )}
