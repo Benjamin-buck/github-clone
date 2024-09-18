@@ -2,6 +2,10 @@
 
 This project is a clone of the GitHub interface, built using **Next.js** and **Tailwind CSS** as part of a portfolio showcase. The goal of the project is to replicate GitHub's sleek design and responsiveness, while demonstrating modern frontend development practices.
 
+## View the Live Demo:
+https://github.benjaminalan.io/dashboard.html
+
+
 ## Table of Contents
 
 - [Features](#features)
