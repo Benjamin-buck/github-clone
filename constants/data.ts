@@ -19,6 +19,18 @@ export const menuItems = [
     {Label: 'Projects', icon:'/home.png', href:"/dashboard"},
     {Label: 'Discussions', icon:'/home.png', href:"/dashboard"},
     {Label: 'Codespaces', icon:'/home.png', href:"/dashboard"},
+]
+
+export const profileItems = [
+    {Label: 'Your Profile', icon:'/home.png', href:"/profile"},
+    {Label: 'Your Repositories', icon:'/home.png', href:"/dashboard"},
+    {Label: 'Your Copilot', icon:'/home.png', href:"/dashboard"},
+    {Label: 'Your projects', icon:'/home.png', href:"/dashboard"},
+    {Label: 'Your stars', icon:'/home.png', href:"/dashboard"},
+    {Label: 'Your gists', icon:'/home.png', href:"/dashboard"},
+    {Label: 'Your Organizations', icon:'/home.png', href:"/dashboard"},
+    {Label: 'Your Enterprises', icon:'/home.png', href:"/dashboard"},
+    {Label: 'Your Sponsors', icon:'/home.png', href:"/dashboard"},
 ] 
 
 export const cards = [

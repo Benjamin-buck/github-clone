@@ -10,10 +10,11 @@ import { BsRecordCircle } from "react-icons/bs";
 import { FaCaretDown } from "react-icons/fa6";
 import { IoMdAdd, IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
-import { menuItems } from "@/constants/data";
+import { menuItems, profileItems } from "@/constants/data";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
+  const [profileNav, setProfileNav] = useState(false);
   return (
     <>
       {mobileNav && (
@@ -32,6 +33,45 @@ const Navbar = () => {
           {/* Menu Items */}
           <div className="mx-4 mt-5">
             {menuItems.map((link) => (
+              <Link
+                href={link.href}
+                key={link.Label}
+                className="flex gap-2 items-center text-sm py-[6px] hover:bg-[#212830] rounded-md px-2"
+              >
+                <img src={link.icon} alt="icon" className="w-5" />
+                {link.Label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {profileNav && (
+        <div className="z-50 bg-[#151b23] fixed top-0 -right-[0] w-[300px] border-r border-gray-700 rounded-lg h-full ">
+          {/* Logo Area */}
+          <div className="flex items-center justify-between mx-4 mt-4">
+            <div className="flex items-center gap-2">
+              <Image
+                src="/profile.jpg"
+                width={40}
+                height={40}
+                alt="profile photo"
+                className="rounded-full"
+              />
+              <p className="font-semibold">Benjamin Alan</p>
+            </div>
+
+            <div
+              onClick={() => setProfileNav(false)}
+              className="bg-gray-700 flex items-center justify-center w-fit p-2 rounded-lg text-gray-300 hover:text-white transition-all duration-250"
+            >
+              <IoMdClose className="text-[15px]" />
+            </div>
+          </div>
+
+          {/* Menu Items */}
+          <div className="mx-4 mt-5">
+            {profileItems.map((link) => (
               <Link
                 href={link.href}
                 key={link.Label}
@@ -87,6 +127,9 @@ const Navbar = () => {
               width={35}
               height={35}
               className="rounded-full"
+              onClick={() => {
+                setProfileNav(true);
+              }}
             />
           </div>
         </div>
