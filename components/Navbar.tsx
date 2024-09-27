@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="z-50 bg-[#151b23] fixed top-0 -left-[0] w-[400px] border-r border-gray-700 rounded-lg h-full ">
           {/* Logo Area */}
           <div className="flex items-center justify-between mx-4 mt-4">
-            <FaGithub className="text-[35px]" />
+            <FaGithub className="text-[35px] text-white" />
             <div
               onClick={() => setMobileNav(false)}
               className="bg-gray-700 flex items-center justify-center w-fit p-2 rounded-lg text-gray-300 hover:text-white transition-all duration-250"

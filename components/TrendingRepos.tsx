@@ -20,15 +20,18 @@ const TrendingRepos = () => {
         <BsThreeDots />
       </div>
       <div className="">
-        {trendingRepos.map(({ repo, description, language, profileImage }) => (
-          <Repository
-            repo={repo}
-            description={description}
-            language={language}
-            profileImage={profileImage}
-            key={repo}
-          />
-        ))}
+        {trendingRepos.map(
+          ({ repo, description, language, profileImage, starred }) => (
+            <Repository
+              repo={repo}
+              description={description}
+              language={language}
+              profileImage={profileImage}
+              key={repo}
+              starred={starred}
+            />
+          )
+        )}
       </div>
     </div>
   );

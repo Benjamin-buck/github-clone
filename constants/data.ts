@@ -7,9 +7,9 @@ export const repos = [
 
 
 export const trendingRepos = [
-    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg'},
-    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg'},
-    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg'},
+    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: false,},
+    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: true,},
+    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: false,},
 ]
 
 export const menuItems = [
