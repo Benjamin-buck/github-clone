@@ -10,9 +10,13 @@ import { BsRecordCircle } from "react-icons/bs";
 import { FaCaretDown } from "react-icons/fa6";
 import { IoMdAdd, IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
-import { menuItems, profileItems } from "@/constants/data";
+import { menuItems, profileItems, profileMenu } from "@/constants/data";
 
-const Navbar = () => {
+interface Props {
+  profile: boolean;
+}
+
+const Navbar = ({profile}: Props) => {
   const [mobileNav, setMobileNav] = useState(false);
   const [profileNav, setProfileNav] = useState(false);
   return (
@@ -132,6 +136,11 @@ const Navbar = () => {
               }}
             />
           </div>
+        </div>
+        <div className="mx-4 mt-3 flex gap-4 max-md:hidden">
+          {profile && profileMenu.map(({href, Label, icon}) => (
+            <Link href={icon} className="flex gap-2 items-center" key={Label}><Image className="w-[20px]" src={icon} width={40} height={40} />{Label}</Link>
+          ))}
         </div>
       </nav>
     </>

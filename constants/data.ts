@@ -10,6 +10,7 @@ export const trendingRepos = [
     {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: false,},
     {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: true,},
     {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: false,},
+    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: false,},
 ]
 
 export const menuItems = [
@@ -19,6 +20,15 @@ export const menuItems = [
     {Label: 'Projects', icon:'/home.png', href:"/dashboard"},
     {Label: 'Discussions', icon:'/home.png', href:"/dashboard"},
     {Label: 'Codespaces', icon:'/home.png', href:"/dashboard"},
+]
+
+export const profileMenu = [
+    {Label: 'Overview', icon:'/book.png', href:"/profile/overview"},
+    {Label: 'Repositories', icon:'/bookmark.png', href:"/profile/repositories"},
+    {Label: 'Projects', icon:'/sheet.png', href:"/profile/projects"},
+    {Label: 'Packages', icon:'/cube.png', href:"/profile/packages"},
+    {Label: 'Stars', icon:'/home.png', href:"/profile/stars"},
+
 ]
 
 export const profileItems = [
