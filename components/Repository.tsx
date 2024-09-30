@@ -1,17 +1,14 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
-import { FaRegStar } from "react-icons/fa";
+import React from "react";
 import { IoCaretDown } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
-import { trendingRepos } from "@/constants/data";
 
 interface Props {
   repo: string;
   description: string;
   language: string;
   profileImage: string;
-  starred: boolean;
   border?: boolean;
   className?: string;
 }
@@ -21,13 +18,15 @@ const Repository = ({
   description,
   language,
   profileImage,
-  starred,
   border,
   className,
 }: Props) => {
-  let [favorite, setFavorite] = useState();
   return (
-    <div className={`${border && 'border border-gray-700 rounded-lg'} ${className}`}>
+    <div
+      className={`${
+        border && "border border-gray-700 rounded-lg"
+      } ${className}`}
+    >
       <div className="border-b last:border-none border-gray-700 mt-5">
         <div className="mb-5 mx-4">
           <div className="flex justify-between">
@@ -43,11 +42,7 @@ const Repository = ({
             </div>
             <div className="bg-[#212830] px-3 py-1 flex items-center justify-between hover:bg-gray-600 rounded-lg border-gray-700 border max-md:hidden">
               <div className="flex items-center gap-2 border-r border-gray-700  pr-2">
-                {favorite ? (
-                  <FaStar />
-                ) : (
-                  <FaRegStar />
-                )}
+                <FaStar />
 
                 <p className="text-sm">Star</p>
               </div>
@@ -64,7 +59,6 @@ const Repository = ({
         </div>
       </div>
     </div>
-    
   );
 };
 

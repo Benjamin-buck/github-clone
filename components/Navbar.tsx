@@ -10,13 +10,19 @@ import { BsRecordCircle } from "react-icons/bs";
 import { FaCaretDown } from "react-icons/fa6";
 import { IoMdAdd, IoMdClose } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
-import { menuItems, profileItems, profileMenu } from "@/constants/data";
+import {
+  menuItems,
+  menuItems2,
+  profileItems,
+  profileMenu,
+  repos,
+} from "@/constants/data";
 
 interface Props {
   profile?: boolean;
 }
 
-const Navbar = ({profile}: Props) => {
+const Navbar = ({ profile }: Props) => {
   const [mobileNav, setMobileNav] = useState(false);
   const [profileNav, setProfileNav] = useState(false);
   return (
@@ -42,8 +48,43 @@ const Navbar = ({profile}: Props) => {
                 key={link.Label}
                 className="flex gap-2 items-center text-sm py-[6px] hover:bg-[#212830] rounded-md px-2"
               >
-                <img src={link.icon} alt="icon" className="w-5" />
+                <Image
+                  src={link.icon}
+                  alt="icon"
+                  className="w-5"
+                  width={100}
+                  height={100}
+                />
                 {link.Label}
+              </Link>
+            ))}
+          </div>
+          <div className="mx-4 mt-5 border-t border-gray-700 pt-2">
+            {menuItems2.map((link) => (
+              <Link
+                href={link.href}
+                key={link.Label}
+                className="flex gap-2 items-center text-sm py-[6px] hover:bg-[#212830] rounded-md px-2"
+              >
+                <Image
+                  src={link.icon}
+                  alt="icon"
+                  className="w-5"
+                  width={100}
+                  height={100}
+                />
+                {link.Label}
+              </Link>
+            ))}
+          </div>
+          <div className="mx-4 mt-2  border-t border-gray-700 pt-2">
+            {repos.map(({ label, href }) => (
+              <Link
+                href={href}
+                key={label}
+                className="flex gap-2 items-center text-sm py-[6px] hover:bg-[#212830] rounded-md px-2"
+              >
+                {label}
               </Link>
             ))}
           </div>
@@ -81,7 +122,7 @@ const Navbar = ({profile}: Props) => {
                 key={link.Label}
                 className="flex gap-2 items-center text-sm py-[6px] hover:bg-[#212830] rounded-md px-2"
               >
-                <img src={link.icon} alt="icon" className="w-5" />
+                <Image src={link.icon} alt="icon" className="w-5" />
                 {link.Label}
               </Link>
             ))}
@@ -138,9 +179,19 @@ const Navbar = ({profile}: Props) => {
           </div>
         </div>
         <div className="mx-4 mt-3 flex gap-4 max-md:hidden">
-          {profile && profileMenu.map(({href, Label, icon}) => (
-            <Link href={icon} className="flex gap-2 items-center" key={Label}><Image alt="icon" className="w-[20px]" src={icon} width={40} height={40} />{Label}</Link>
-          ))}
+          {profile &&
+            profileMenu.map(({ href, Label, icon }) => (
+              <Link href={href} className="flex gap-2 items-center" key={Label}>
+                <Image
+                  alt="icon"
+                  className="w-[20px]"
+                  src={icon}
+                  width={40}
+                  height={40}
+                />
+                {Label}
+              </Link>
+            ))}
         </div>
       </nav>
     </>

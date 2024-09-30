@@ -7,10 +7,10 @@ export const repos = [
 
 
 export const trendingRepos = [
-    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: false,},
-    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: true,},
-    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: false,},
-    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg', starred: false,},
+    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg'},
+    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg'},
+    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg'},
+    {repo: 'leerob/next-sass-starter', description: 'Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui', language: 'Typescript', profileImage: '/profile.jpg'},
 ]
 
 export const menuItems = [
@@ -20,6 +20,11 @@ export const menuItems = [
     {Label: 'Projects', icon:'/home.png', href:"/dashboard"},
     {Label: 'Discussions', icon:'/home.png', href:"/dashboard"},
     {Label: 'Codespaces', icon:'/home.png', href:"/dashboard"},
+]
+
+export const menuItems2 = [
+    {Label: 'Explore', icon:'/home.png', href:"/explore"},
+    {Label: 'Marketplace', icon:'/home.png', href:"/marketplace"},
 ]
 
 export const profileMenu = [
