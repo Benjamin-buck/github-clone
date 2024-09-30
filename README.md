@@ -32,7 +32,8 @@ https://github.benjaminalan.io/dashboard.html
 
 ## Current Progress & Screenshots
 ### Github Dashboard
-![image](https://github.com/user-attachments/assets/a03a4c71-3fcf-4774-9265-119f2f6b40d4)
+![image](https://github.com/user-attachments/assets/10fdeec9-91ab-4b59-8e8e-f18ddd41a8d5)
+![image](https://github.com/user-attachments/assets/ae5f7bfe-c0dd-4223-a733-592fea3489ca)
 
 
 
@@ -44,4 +45,9 @@ To get a local copy of the project up and running, follow these steps:
 
 - **Node.js** (v14 or later) and npm installed on your system
 - **Git** installed for version control
+### Instructions
+- Clone the Github repository
+- Open in VS Code and run npm install in the terminal to install all dependencies
+- Run the start command 'NPM Run Dev'
+- Go to http://localhost:3000/ and view the development version.
 
