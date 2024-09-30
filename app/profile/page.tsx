@@ -19,6 +19,7 @@ const page = () => {
               width={300}
               height={300}
               className="rounded-full max-h-[300px]"
+              alt="Profile"
             />
             <h2 className="text-xl text-gray-500 mt-5">Benjamin Alan</h2>
             <button className="mt-4 bg-[#212830] w-full py-2 border border-gray-500 rounded-lg hover:">Edit Profile</button>
@@ -30,7 +31,7 @@ const page = () => {
           <h2 className="text-lg">Popular Repositories</h2>
           <div className="flex flex-wrap justify-between max-lg:flex-col">
             {trendingRepos.map(() => (
-              <Repository className="my-2 w-[49.5%] max-lg:w-auto" border={"true"} repo={"Github-Clone"} description={"Test"} language={"Javascript"} profileImage={"/profile.jpg"} starred={false}  />
+              <Repository className="my-2 w-[49.5%] max-lg:w-auto" border={true} repo={"Github-Clone"} description={"Test"} language={"Javascript"} profileImage={"/profile.jpg"} starred={false}  />
             ))}
           </div>
           <div className="my-5">

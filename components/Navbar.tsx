@@ -13,7 +13,7 @@ import { IoSearch } from "react-icons/io5";
 import { menuItems, profileItems, profileMenu } from "@/constants/data";
 
 interface Props {
-  profile: boolean;
+  profile?: boolean;
 }
 
 const Navbar = ({profile}: Props) => {
@@ -139,7 +139,7 @@ const Navbar = ({profile}: Props) => {
         </div>
         <div className="mx-4 mt-3 flex gap-4 max-md:hidden">
           {profile && profileMenu.map(({href, Label, icon}) => (
-            <Link href={icon} className="flex gap-2 items-center" key={Label}><Image className="w-[20px]" src={icon} width={40} height={40} />{Label}</Link>
+            <Link href={icon} className="flex gap-2 items-center" key={Label}><Image alt="icon" className="w-[20px]" src={icon} width={40} height={40} />{Label}</Link>
           ))}
         </div>
       </nav>

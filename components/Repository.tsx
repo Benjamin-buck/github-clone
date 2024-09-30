@@ -12,8 +12,8 @@ interface Props {
   language: string;
   profileImage: string;
   starred: boolean;
-  border: boolean;
-  className: string;
+  border?: boolean;
+  className?: string;
 }
 
 const Repository = ({
@@ -23,7 +23,7 @@ const Repository = ({
   profileImage,
   starred,
   border,
-  className
+  className,
 }: Props) => {
   let [favorite, setFavorite] = useState();
   return (
@@ -44,11 +44,7 @@ const Repository = ({
             <div className="bg-[#212830] px-3 py-1 flex items-center justify-between hover:bg-gray-600 rounded-lg border-gray-700 border max-md:hidden">
               <div className="flex items-center gap-2 border-r border-gray-700  pr-2">
                 {favorite ? (
-                  <FaStar
-                    onClick={() => {
-                      setFavorite = true;
-                    }}
-                  />
+                  <FaStar />
                 ) : (
                   <FaRegStar />
                 )}
