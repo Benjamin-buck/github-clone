@@ -12,9 +12,6 @@ https://github.benjaminalan.io/dashboard.html
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
