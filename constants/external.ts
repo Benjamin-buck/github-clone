@@ -14,3 +14,50 @@ export const navLinks = [
     {label: 'Enterprise', icon:'/home.png', href:"/dashboard"},
     {label: 'Pricing', icon:'/home.png', href:"/dashboard"},
 ]
+
+export const footerText = [
+    {logo: 'GitHub', heading: 'Subscribe to our developer newsletter', description: 'Get tips, technical guides, and best practices. Twice a month. Right in your inbox', buttonLabel: 'Subscribe'}
+]
+
+export const footerColumn1 = [
+    {label: 'Product', href:"/dashboard"},
+    {label: 'Features', href:"/dashboard"},
+    {label: 'Enterprise', href:"/dashboard"},
+    {label: 'Copilot', href:"/dashboard"},
+    {label: 'Security', href:"/dashboard"},
+    {label: 'Pricing', href:"/dashboard"},
+    {label: 'Team', href:"/dashboard"},
+    {label: 'Resources', href:"/dashboard"},
+]
+
+export const footerColumn2 = [
+    {label: 'Developer API', href:"/dashboard"},
+    {label: 'Partners', href:"/dashboard"},
+    {label: 'Education', href:"/dashboard"},
+    {label: 'GitHub CLI', href:"/dashboard"},
+    {label: 'GitHub Desktop', href:"/dashboard"},
+    {label: 'GitHub Mobile', href:"/dashboard"}
+]
+
+export const footerColumn3 = [
+    {label: 'Docs', href:"/dashboard"},
+    {label: 'Community Forum', href:"/dashboard"},
+    {label: 'Professional Services', href:"/dashboard"},
+    {label: 'Premium Support', href:"/dashboard"},
+    {label: 'Skills', href:"/dashboard"},
+    {label: 'Status', href:"/dashboard"},
+    {label: 'Contact GitHub', href:"/dashboard"},
+]
+
+export const footerColumn4 = [
+    {label: 'About', href:"/dashboard"},
+    {label: 'Customer stories', href:"/dashboard"},
+    {label: 'Blog', href:"/dashboard"},
+    {label: 'The ReadME Project', href:"/dashboard"},
+    {label: 'Careers', href:"/dashboard"},
+    {label: 'Newsroom', href:"/dashboard"},
+    {label: 'Inclusion', href:"/dashboard"},
+    {label: 'Social Impact', href:"/dashboard"},
+    {label: 'Shop', href:"/dashboard"},
+]
+
