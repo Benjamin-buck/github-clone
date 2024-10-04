@@ -10,8 +10,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="absolute bottom-0 left-0 w-full">
-      <div className="flex mx-auto container text-white justify-between max-lg:flex-col">
+    <div className="bottom-0 left-0 w-full bg-[#0D1117]">
+      <div className="flex mx-auto container text-white justify-between max-lg:flex-col pt-4">
         <div className="max-lg:text-center mb-8">
           {footerText.map(({ logo, heading, description, buttonLabel }) => (
             <div key="1">

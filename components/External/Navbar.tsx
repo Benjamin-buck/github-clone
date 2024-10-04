@@ -6,7 +6,7 @@ import { IoSearchSharp } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between text-white py-3 mx-auto container max-md:mx-4">
+    <div className="flex justify-between text-white py-3 md:mx-auto md:container max-md:px-4">
       <div className="flex items-center gap-6 ">
         <FaGithub className="text-[32px]" />
         {navLinks.map(({ label, href }) => (
