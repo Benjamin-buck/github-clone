@@ -122,7 +122,13 @@ const Navbar = ({ profile }: Props) => {
                 key={link.Label}
                 className="flex gap-2 items-center text-sm py-[6px] hover:bg-[#212830] rounded-md px-2"
               >
-                <Image src={link.icon} alt="icon" className="w-5" />
+                <Image
+                  src={link.icon}
+                  alt="icon"
+                  className="w-5"
+                  height={40}
+                  width={40}
+                />
                 {link.Label}
               </Link>
             ))}

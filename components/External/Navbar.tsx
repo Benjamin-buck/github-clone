@@ -27,8 +27,8 @@ const Navbar = () => {
           placeholder="Search or jump to..."
         />
 
-        <Link href="/sign-in">Sign in</Link>
-        <Link href="/sign-up" className="border rounded-md px-3 py-1">
+        <Link href="/dashboard">Sign in</Link>
+        <Link href="/dashboard" className="border rounded-md px-3 py-1">
           Sign up
         </Link>
       </div>
