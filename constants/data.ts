@@ -15,11 +15,7 @@ export const trendingRepos = [
 
 export const menuItems = [
     {Label: 'Home', icon:'/home.png', href:"/dashboard"},
-    {Label: 'Issues', icon:'/home.png', href:"/dashboard"},
-    {Label: 'Pull Requests', icon:'/home.png', href:"/dashboard"},
-    {Label: 'Projects', icon:'/home.png', href:"/dashboard"},
-    {Label: 'Discussions', icon:'/home.png', href:"/dashboard"},
-    {Label: 'Codespaces', icon:'/home.png', href:"/dashboard"},
+    {Label: 'Issues', icon:'/record.png', href:"/issues"},
 ]
 
 export const menuItems2 = [

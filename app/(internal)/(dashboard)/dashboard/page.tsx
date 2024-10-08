@@ -6,7 +6,7 @@ import TopRepos from "@/components/TopRepos";
 const Dashboard = () => {
   return (
     <div className="text-white">
-      <Navbar />
+      <Navbar pageTitle="Dashboard" />
 
       <div className="flex flex-row max-md:flex-col">
         <div className=" flex-1 h-[100vh] ">

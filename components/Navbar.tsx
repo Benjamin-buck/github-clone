@@ -20,9 +20,10 @@ import {
 
 interface Props {
   profile?: boolean;
+  pageTitle: string;
 }
 
-const Navbar = ({ profile }: Props) => {
+const Navbar = ({ profile, pageTitle }: Props) => {
   const [mobileNav, setMobileNav] = useState(false);
   const [profileNav, setProfileNav] = useState(false);
   return (
@@ -146,7 +147,7 @@ const Navbar = ({ profile }: Props) => {
             <Link href="/">
               <FaGithub className="text-3xl" />
             </Link>
-            <p className="font-semibold text-sm">Dashboard</p>
+            <p className="font-semibold text-sm">{pageTitle}</p>
           </div>
           <div className="flex items-center gap-3 text-gray-400">
             <div className="flex gap-2 px-2 items-center rounded-xl border border-gray-600 max-md:py-2">
@@ -163,9 +164,8 @@ const Navbar = ({ profile }: Props) => {
               <FaCaretDown />
             </div>
             <div className="border border-gray-600 flex gap-2 p-2 text-md rounded-lg max-sm:hidden">
-              <BsRecordCircle />
+              <Link href='/issues'><BsRecordCircle /></Link>
             </div>
-
             <div className="border border-gray-600 flex gap-2 p-2 text-md rounded-lg max-sm:hidden">
               <GoRepoForked />
             </div>
