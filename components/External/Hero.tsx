@@ -7,13 +7,13 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Hero = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <Image
         alt="background Image"
         src="/hero.png"
         width={770}
         height={540}
-        className="absolute -z-10 -right-[100px] top-0 max-lg:hidden"
+        className="absolute -z-10 -right-[100px] top-0 max-lg:hidden overflow-hidden"
       />
       <div className="mx-auto container mt-[100px] flex">
         <div className="flex flex-col items-center px-8">

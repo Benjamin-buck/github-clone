@@ -61,3 +61,11 @@ export const footerColumn4 = [
     {label: 'Shop', href:"/dashboard"},
 ]
 
+export const signInLinks = [
+    {label: 'Terms', href: '/'},
+    {label: 'Privacy', href: '/'},
+    {label: 'Docs', href: '/'},
+    {label: 'Contact GitHub Support', href: '/'},
+    {label: 'Manage cookies', href: '/'},
+    {label: 'Do not share my personal info', href: '/'},
+]
