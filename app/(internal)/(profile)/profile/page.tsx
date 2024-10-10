@@ -8,7 +8,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="text-white">
-      <Navbar profile={true} />
+      <Navbar profile={true} pageTitle='Profile' />
 
       <div className="mt-12 mx-10 flex flex-row">
         <div className="flex pr-12">
